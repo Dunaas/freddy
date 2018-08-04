@@ -29,7 +29,7 @@ bot.on("messageCreate", (msg) => {
         dEvent.push('noFlood');
         bot.createMessage('395994706477187083', {
             embed: {
-                title: "Evento X",
+                title: "Evento Unarmed",
                 description: dEvent[0] + ' ⚔ ' + dEvent[1] + '\n' + dEvent[2] + ' ⚔ ' + dEvent[3] + '\n' + dEvent[4] + ' ⚔ ' + dEvent[5] + '\n' + dEvent[6] + ' ⚔ ' + dEvent[7] + '\n' + dEvent[8] + ' ⚔ ' + dEvent[9] + '\n' + dEvent[10] + ' ⚔ ' + dEvent[11] + '\n' + dEvent[12] + ' ⚔ ' + dEvent[13] + '\n' + dEvent[14] + ' ⚔ ' + dEvent[15],
                 author: {
                     name: "Eliminations",
