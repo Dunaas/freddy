@@ -2,7 +2,7 @@ var Eris = require('eris');
 var bot = new Eris(process.env.BOT_TOKEN);
 var dEvent = [];
 var eAndamento = false;
-var dEtapa = 1;
+var dEtapa = 0;
 var dStaffOrg = ['211962239433834498', '288021215535300608'];
 bot.on("ready", () => {
     console.log("Ready!");
