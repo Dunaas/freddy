@@ -13,8 +13,8 @@ bot.on("messageCreate", (msg) => {
     var args = msg.content.split(" ").slice(1);
 
     if(command == '!evento' && eAndamento == false){
-        bot.createMessage('395994706477187083', '``Evento iniciando! Use`` **!entrar** ``para participar!``')
         eAndamento = true;
+        bot.createMessage('395994706477187083', '``Evento iniciando! Use`` **!entrar** ``para participar!``');
     }
     if(command === "!entrar" && dEvent.length < 16 && dEvent.indexOf(msg.author.mention) == -1 && dEtapa == 0 && eAndamento == true){
         msg.delete();
