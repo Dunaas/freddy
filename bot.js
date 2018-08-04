@@ -12,7 +12,7 @@ bot.on("messageCreate", (msg) => {
     var command = msg.content.toLowerCase();
     var args = msg.content.split(" ").slice(1);
 
-    if(command == '!evento' && eAndamento == false){
+    if(command == '!evento' && eAndamento == false && dStaffOrg.indexOf(msg.author.id) != -1){
         eAndamento = true;
         bot.createMessage('395994706477187083', '``Evento iniciando! Use`` **!entrar** ``para participar!``');
     }
